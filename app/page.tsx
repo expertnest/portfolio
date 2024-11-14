@@ -15,13 +15,8 @@ export default function Home() {
       <PageWrapper>
        
       <div className="sm:hidden md:block md:w-full">
- <ShootingStarsAndStarsBackgroundDemo />
+      <ShootingStarsAndStarsBackgroundDemo />
       </div>
-       
-      
-           
-       
-         
           <About />
           <MarketingCards />
       
