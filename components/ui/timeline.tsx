@@ -37,16 +37,16 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
   return (
     <div
-      className="w-full bg-white dark:bg-neutral-950 font-sans md:px-10 sm:mt-[30px] md:mt-12 "
+      className="w-full bg-white dark:bg-neutral-950 font-sans md:px-10 sm:mt-[-70px] md:mt-12 "
       ref={containerRef}
     >
       {/* Centered Container for Image and Title */}
       <div className="container mx-auto text-center py-10"> {/* Added top margin here */}
         <h2 className={`${TITLE_TAILWIND_CLASS} mt-2 font-semibold tracking-tight dark:text-white text-gray-900`}>
-          Our Projects
+         Professional Timeline
         </h2>
-        <p className="max-w-[500px] text-gray-600 dark:text-gray-400 mt-2 text-center container mx-auto">
-          Explore our range of powerful tools and frameworks for seamless development.
+        <p className="max-w-[500px] sm:pt-3 md:pt-0 text-gray-600 dark:text-gray-400 mt-2 text-center container mx-auto">
+        Experience in Web Development and Digital Solutions
         </p>
       </div>
       

@@ -35,13 +35,7 @@ const ProjectsData = [
       imageDark: "https://utfs.io/f/f9ae4f1b-76a1-4505-afc0-dfcbea05012d-62drog.png",
       url: "https://ui.shadcn.com"
     },
-    {
-      id: 5,
-      name: 'Clerk Authentication',
-      description: ' ',
-      image: 'https://utfs.io/f/aee7360d-54f1-4ed1-a4b4-49a56b455bf4-1ker11.png',
-      url: "https://clerk.com/"
-    },
+    
     {
       id: 6,
       name: 'Supabase (PostgreSQL)',
@@ -77,11 +71,32 @@ const ProjectsData = [
       image: 'https://utfs.io/f/c01790c1-7c12-4a5e-b50f-a44358124853-3mzznq.png',
       url: "https://upstash.com/"
     },
+    {
+      id: 5,
+      name: 'Figma',
+      description: ' ',
+      image: '/figmaLogo.png',
+      url: "https://clerk.com/"
+    },
+    {
+      id: 11,
+      name: 'Convex',
+      description: ' ',
+      image: '/convexLogo.png',
+      url: "https://upstash.com/"
+    },
+    {
+      id: 12,
+      name: 'CosmWasm',
+      description: ' ',
+      image: '/cosmWasmLogo.png',
+      url: "https://upstash.com/"
+    },
   ]
   
 const SpringAnimatedFeatures = () => {
   return (
-    <div className="h-[50rem] w-full dark:bg-black bg-white md:dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative flex items-center justify-center sm:mt-[150px] md:mt-3">
+    <div className="h-[50rem] w-full dark:bg-black bg-white md:dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative flex items-center justify-center sm:mt-[200px] md:mt-3">
       {/* Radial gradient for faded look */}
       <div className=" pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       

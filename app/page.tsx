@@ -17,7 +17,7 @@ export default function Home() {
           <ShootingStarsAndStarsBackgroundDemo />
           <About />
           <MarketingCards />
-          <div className="container mx-auto">
+          <div className="md:container mx-auto">
               <AppleCardsCarouselDemo />
           </div>
         
