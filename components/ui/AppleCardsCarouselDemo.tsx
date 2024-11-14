@@ -28,9 +28,26 @@ interface DummyContentProps {
   url:string;
 }
 
+import { useEffect, useState } from 'react';
+
 export function AppleCardsCarouselDemo() {
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => setIsSmallScreen(window.innerWidth <= 640); // adjust to your breakpoints
+    handleResize(); // check initial size
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const cards = data.map((card, index) => (
-    <Card key={card.src} card={card} index={index} />
+    isSmallScreen ? (
+      <a key={card.src} href="https://www.google.com"className="block">
+        <Card card={card} index={index} />
+      </a>
+    ) : (
+      <Card key={card.src} card={card} index={index} />
+    )
   ));
 
   return (

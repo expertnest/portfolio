@@ -13,8 +13,10 @@ export function ShootingStarsAndStarsBackgroundDemo() {
       </h2>
       <ShootingStars />
       <StarsBackground />
-    
-         <BorderBeam />
+    <div className="sm:hidden md:block">
+      <BorderBeam />
+    </div>
+         
    
      
       
