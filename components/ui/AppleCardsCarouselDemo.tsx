@@ -47,7 +47,7 @@ const DummyContent: React.FC<DummyContentProps> = ({  pic1, pic2, pic3, category
   return (
     <>
       {[...new Array(1)].map((_, index) => (
-        <div>
+        <div key={"dummy-content" + index}>
 
          <div
               key={"dummy-content" + index}
