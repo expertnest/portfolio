@@ -164,7 +164,7 @@ export const Card = ({
 }) => {
   const [open, setOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
-  const { onCardClose} = useContext(CarouselContext);
+  const { onCardClose,  } = useContext(CarouselContext);
 
   useEffect(() => {
     function onKeyDown(event: KeyboardEvent) {
@@ -230,7 +230,6 @@ export const Card = ({
                 className="text-2xl md:text-5xl font-semibold text-neutral-700 mt-4 dark:text-white"
               >
                 {card.title}
-              
               </motion.p>
               <div className="py-10">{card.content}</div>
             </motion.div>
