@@ -34,7 +34,7 @@ export function AppleCardsCarouselDemo() {
   ));
 
   return (
-    <div className="w-full h-full py-20 sm:pt-[170px] md:pt-0">
+    <div className="w-full h-full py-20 sm:pt-[170px] md:pt-10">
       <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
         Latest Projects
       </h2>
@@ -43,11 +43,11 @@ export function AppleCardsCarouselDemo() {
   );
 }
 
-const DummyContent: React.FC<DummyContentProps> = ({pic1, pic2, pic3, categoryOne, categoryTwo, categoryThree, descriptionOne, descriptionTwo, descriptionThree, url }) => {
+const DummyContent: React.FC<DummyContentProps> = ({  pic1, pic2, pic3, categoryOne, categoryTwo, categoryThree, descriptionOne, descriptionTwo, descriptionThree, url }) => {
   return (
     <>
       {[...new Array(1)].map((_, index) => (
-        <div key={"dummy-content" + index}>
+        <div>
 
          <div
               key={"dummy-content" + index}
