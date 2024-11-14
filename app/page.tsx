@@ -13,25 +13,14 @@ export default function Home() {
   return (
     <div className="relative min-h-screen">
       <PageWrapper>
-       
-      <div className="sm:hidden md:block md:w-full">
-      <ShootingStarsAndStarsBackgroundDemo />
-      </div>
-          <About />
-          <MarketingCards />
+     
       
               <AppleCardsCarouselDemo />
        
             
        
         
-          <TimelineDemo />
-          <div className="sm:hidden md:block md:w-full" >
-            <BackgroundBeamsWithCollision>
-           <HyperTextDemo />
-          </BackgroundBeamsWithCollision>
-          </div>
-         
+      
       </PageWrapper>
     </div>
   );
