@@ -14,10 +14,7 @@ export default function Home() {
     <div className="relative min-h-screen">
       <PageWrapper>
        
-       <div className="sm:hidden md:w-full md:block">
-        <ShootingStarsAndStarsBackgroundDemo />
-       </div>
-           
+      
        
          
           <About />
