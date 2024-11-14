@@ -6,7 +6,7 @@ import { AppleCardsCarouselDemo } from "@/components/ui/AppleCardsCarouselDemo";
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen">
+ 
       <PageWrapper>
      
       
@@ -17,6 +17,6 @@ export default function Home() {
         
       
       </PageWrapper>
-    </div>
+  
   );
 }
