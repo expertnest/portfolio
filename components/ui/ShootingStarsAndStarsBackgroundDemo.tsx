@@ -13,7 +13,10 @@ export function ShootingStarsAndStarsBackgroundDemo() {
       </h2>
       <ShootingStars />
       <StarsBackground />
-      <BorderBeam />
+    
+         <BorderBeam />
+   
+     
       
     </div>
   );
