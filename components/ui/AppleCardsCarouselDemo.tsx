@@ -2,12 +2,14 @@
 import Image from "next/image";
 import React from "react";
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
+import { TITLE_TAILWIND_CLASS } from "@/utils/constants";
 
 // Define the type for a card object
 type CardData = {
   category: string;
   title: string;
   src: string;
+  link:string
  content: JSX.Element;
 };
 
@@ -27,7 +29,6 @@ interface DummyContentProps {
   descriptionThree: string
   url:string;
 }
-
 import { useEffect, useState } from 'react';
 
 export function AppleCardsCarouselDemo() {
@@ -42,7 +43,7 @@ export function AppleCardsCarouselDemo() {
 
   const cards = data.map((card, index) => (
     isSmallScreen ? (
-      <a key={card.src} href="https://www.google.com"className="block">
+      <a key={card.src} href={card.link} className="block">
         <Card card={card} index={index} />
       </a>
     ) : (
@@ -51,14 +52,18 @@ export function AppleCardsCarouselDemo() {
   ));
 
   return (
-    <div className="w-full h-full py-20 sm:pt-[170px] md:pt-0">
-      <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
-        Latest Projects
-      </h2>
+    <div className="w-full h-full py-20 sm:pt-[170px] md:pt-0 mx-auto  text-center md:pt-5">
+           <h2 className={`${TITLE_TAILWIND_CLASS} mt-2 font-semibold tracking-tight dark:text-white text-gray-900`}>
+     Latest Projects
+        </h2>
+        <p className="max-w-[500px] text-gray-600 dark:text-gray-400 mt-2 mx-auto  text-center ">
+       Check out my latest works
+        </p>
       <Carousel items={cards} />
     </div>
   );
 }
+
 
 const DummyContent: React.FC<DummyContentProps> = ({  pic1, pic2, pic3, categoryOne, categoryTwo, categoryThree, descriptionOne, descriptionTwo, descriptionThree, url }) => {
   return (
@@ -147,6 +152,7 @@ const data: CardData[] = [
     category: "Web Development",
     title: "Soch Performance",
     src: "/soch-1.png",
+    link:"https://www.sampledemo.website/en",
     content: <DummyContent category="Artificial Intelligence" title="You can do more with AI." src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?q=80&w=3556&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" pic1="/soch-1.png" pic2="/soch-2.png" pic3="/soch-3.png" 
     categoryOne="Next.js" categoryTwo="Internationalization " categoryThree="Tailwind CSS and Framer Motion" descriptionOne="provided a robust foundation for performance and scalability, enabling fast load times and efficient rendering across devices, which was essential for Soch Performance’s competitive positioning." descriptionTwo="allowed the site to cater to a diverse audience by supporting multiple languages, making Soch Performance accessible to global users and enhancing its market reach." descriptionThree=" facilitated rapid and responsive design, streamlining the development process and ensuring a visually cohesive layout that aligns with Soch’s high-end brand image." url="https://www.sampledemo.website/en"/>,
 
@@ -156,6 +162,7 @@ const data: CardData[] = [
     category: "Web Development",
     title: "Cheves Briceno Law Firm",
     src: "/briceno1.png",
+    link:"https://ai-blog-updated.vercel.app/en",
     content: <DummyContent category="Productivity" title="Enhance your productivity." src="/briceno1.jpg" pic1="/briceno1.png" pic2="/briceno-2.png" pic3="/briceno-3.png" 
     categoryOne="Next.js " categoryTwo="Directus CMS" categoryThree="Dynamic SEO " descriptionOne="was key for improving performance and flexibility, especially with the app directory feature, making it well-suited for the law firm’s modern needs and SEO requirements." descriptionTwo="provided a seamless headless CMS solution for managing dynamic blog content, allowing the firm to easily add, edit, and organize posts while maintaining strong SEO practices." descriptionThree="involved optimizing for search engines with language support in both English and Spanish, a dynamic sitemap, and elevated Google PageSpeed scores, ensuring the site reaches a broader, international audience effectively." url="https://ai-blog-updated.vercel.app/en"/>,
   },
@@ -163,6 +170,7 @@ const data: CardData[] = [
     category: "Web Development",
     title: "Whitespace",
     src: "/white1.png",
+    link:"https://whitespace-livid.vercel.app/",
     content: <DummyContent category="Product" title="Launching the new Apple Vision Pro." src="/white.png" pic1="/white1.png" pic2="/white2.png" pic3="/white3.png"
     categoryOne="Next.js" categoryTwo="Sanity CMS" categoryThree="GROQ " descriptionOne="was the foundation for the museum's new website, providing speed, scalability, and a more modern alternative to WordPress, which significantly enhanced the site's performance and user experience." descriptionTwo="offered a flexible and user-friendly backend, allowing museum editors to easily manage content like artists, events, and galleries, making it ideal for the museum’s dynamic and expanding needs." descriptionThree="enabled efficient data querying within Sanity, streamlining content retrieval for artist profiles, events, and galleries, which allowed for a robust and highly tailored display of the museum’s offerings." url="https://whitespace-livid.vercel.app/"/>,
   },
@@ -170,6 +178,7 @@ const data: CardData[] = [
     category: "Web Development",
     title: "Maps for your iPhone 15 Pro Max.",
     src: "/gen1.png",
+    link:"https://genjutsuatl.com",
     content: <DummyContent category="Product" title="Maps for your iPhone 15 Pro Max." src="https://images.unsplash.com/photo-1599202860130-f600f4948364?q=80&w=2515&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" pic1="/gen1.png" pic2="/gen2.png" pic3="/gen3.png"
     categoryOne="HTML " categoryTwo="CSS" categoryThree="JavaScript" descriptionOne="provided the structural foundation for the website, enabling a clear, organized layout that effectively showcased GenjutsuATL’s services and portfolio." descriptionTwo="was instrumental in creating a visually appealing design, reflecting the agency’s creative style while ensuring that the website remained consistent and professional across various screen sizes." descriptionThree="added interactivity to the site, powering dynamic animations and video elements, which enhanced user engagement and allowed visitors to experience GenjutsuATL's filmmaking artistry firsthand." url="https://genjutsuatl.com"/>,
   },

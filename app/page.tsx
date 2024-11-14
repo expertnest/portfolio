@@ -7,6 +7,7 @@ import About from "@/components/homepage/About";
 import { AppleCardsCarouselDemo } from "@/components/ui/AppleCardsCarouselDemo";
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
 import { HyperTextDemo } from '@/components/ui/HyperTextDemo'
+ 
 
 
 export default function Home() {
@@ -22,9 +23,14 @@ export default function Home() {
          
           <About />
           <MarketingCards />
+
+ 
+          <AppleCardsCarouselDemo />
+ 
           
-          <AppleCardsCarouselDemo />
-          <AppleCardsCarouselDemo />
+ 
+       
+         
        
             
        
