@@ -1,21 +1,16 @@
 "use client"
-import { useForm } from 'react-hook-form';
 import { Input } from '../ui/input';
 import { Button } from '../ui/button';
+import { sendEmail } from "@/actions/sendEmail";
+import toast from "react-hot-toast";
+import { Textarea } from "@/components/ui/textarea"
+import React, { useRef } from "react";
 
 export default function Footer() {
-    const {
-        register,
-        handleSubmit,
-        formState:  {},
-       
-    } = useForm();
+    const formRef = useRef<HTMLFormElement>(null);
 
 
-    const onSubmit = async ( ) => {
-
-
-    };
+     
     return (
         <footer className="border-t dark:bg-black">
             <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
@@ -26,19 +21,43 @@ export default function Footer() {
                         <div className="mt-8 space-y-4 lg:mt-0">
 
                             <div>
-                                <h3 className="text-2xl font-medium">This is a fake newsletter title</h3>
+                                <h3 className="text-2xl font-medium">Reach out for any questions!</h3>
                                 <p className="mt-4 max-w-lg  ">
-                                    This is not a real newsletter email input. This is for you to build upon
+                                   
                                 </p>
                             </div>
-                            <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col border rounded-xl p-4 gap-3 mt-6 w-full">
+                            <form
+                             ref={formRef}
+                            className="flex flex-col border rounded-xl p-4 gap-3 mt-6 w-full"
+                                  action={async (formData) => {
+                                    const { data, error } = await sendEmail(formData);
+                          
+                                    if (error) {
+                                      toast.error(error);
+                                      return;
+                                    }
+                          
+                                    toast.success("Email sent successfully!");
+                                              // Clear form fields and reCAPTCHA value
+                                    if (formRef.current) {
+                                        formRef.current.reset();
+                                    }
+
+                                  }}
+                            >
                                 <Input
-                                    {...register('email', { required: true })}
+                                    name="senderEmail"
                                     placeholder="Enter your email"
                                     type="email"
+                                    required
                                 />
+                                  <Textarea 
+                                  name="message"
+                                  required
+                                  maxLength={5000}
+                                  placeholder="Type your message here." />
                                 <Button type="submit">
-                                    Sign Up
+                                   Send Message
                                 </Button>
                             </form>
                         </div>
