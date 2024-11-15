@@ -15,7 +15,7 @@ import { Dialog, DialogClose } from "@radix-ui/react-dialog";
 
 const components = [
     {
-        title: "Marketing Page",
+        title: "Marketing Pages",
         href: "/marketing-page",
         description: "Write some wavy here to get them to click.",
     },
