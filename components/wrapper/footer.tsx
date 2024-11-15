@@ -4,10 +4,10 @@ import { Button } from '../ui/button';
 import { sendEmail } from "@/actions/sendEmail";
 import toast from "react-hot-toast";
 import { Textarea } from "@/components/ui/textarea"
- 
+import React, { useRef } from "react";
 
 export default function Footer() {
-  
+    const formRef = useRef<HTMLFormElement>(null);
 
 
      
@@ -39,7 +39,9 @@ export default function Footer() {
                           
                                     toast.success("Email sent successfully!");
                                               // Clear form fields and reCAPTCHA value
-                                    
+                                    if (formRef.current) {
+                                        formRef.current.reset();
+                                    }
 
                                   }}
                             >
