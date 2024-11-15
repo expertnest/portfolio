@@ -30,7 +30,7 @@ export default function Footer() {
                              ref={formRef}
                             className="flex flex-col border rounded-xl p-4 gap-3 mt-6 w-full"
                                   action={async (formData) => {
-                                    const { data, error } = await sendEmail(formData);
+                                    const {  error } = await sendEmail(formData);
                           
                                     if (error) {
                                       toast.error(error);
