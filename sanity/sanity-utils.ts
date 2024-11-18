@@ -40,9 +40,12 @@ export async function fetchBlogCards(): Promise<
         title,
         "slug": slug.current
       }
-    } | order(publishedAt desc)`
+    } | order(publishedAt asc)[0...3]`
+    
   );
 }
+
+
 
 // Fetch a single blog post by slug
 export async function fetchSingleBlogPost(slug: string): Promise<{
