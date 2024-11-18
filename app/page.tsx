@@ -7,6 +7,10 @@ import About from "@/components/homepage/About";
 import { AppleCardsCarouselDemo } from "@/components/ui/AppleCardsCarouselDemo";
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
 import { HyperTextDemo } from '@/components/ui/HyperTextDemo'
+import BlogCards from "@/components/homepage/BlogCards";
+{/* import BlogPostPage from "@/components/homepage/BlogPost";
+import { BackgroundBeamsDemo } from "@/components/ui/BackgroundBeamsDemo";
+import { ParticlesDemo } from "@/components/ui/ParticlesDemo"; */}
  
 
 
@@ -34,8 +38,11 @@ export default function Home() {
        
             
        
+
         
           <TimelineDemo />
+         
+          <BlogCards/>
           <BackgroundBeamsWithCollision>
            <HyperTextDemo />
           </BackgroundBeamsWithCollision>

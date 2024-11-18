@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ui/theme-provider"
 import { Toaster } from "react-hot-toast";
+{ /* import { FloatingDockDemo } from "@/components/ui/FloatingDockDemo"; */}
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -37,6 +38,7 @@ export default function RootLayout({
             disableTransitionOnChange
           >
             {children}
+           {/* < FloatingDockDemo /> */} 
             <Toaster position="top-right" />
           </ThemeProvider>
       </body>
