@@ -60,17 +60,17 @@ const BlogCards = () => {
   return (
     <div className="relative">
       <h2
-        className={`${TITLE_TAILWIND_CLASS} sm:mt-[65px] md:mt-[130px] font-semibold tracking-tight dark:text-white text-gray-900 text-center`}
+        className={`${TITLE_TAILWIND_CLASS} sm:mt-[35px] md:mt-[100px] font-semibold tracking-tight dark:text-white text-gray-900 text-center`}
       >
        Latest Blog Posts
       </h2>
-      <p className="max-w-[500px] text-gray-600 dark:text-gray-400 mt-2 mx-auto text-center">
+      <p className="max-w-[500px] text-gray-600 dark:text-gray-400 mt-2 mx-auto text-center md:pb-5">
        Read my thoughts on web topics!
       </p>
 
       {isMobile ? (
         // Carousel for mobile
-        <div className="relative overflow-hidden w-full mt-6">
+        <div className="relative overflow-hidden md:w-full mt-4 sm:max-w-[370px]">
           <div
             className="flex transition-transform ease-in-out duration-500"
             style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -127,7 +127,7 @@ const BlogCards = () => {
         </div>
       ) : (
         // Grid layout for medium and larger screens
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6 mt-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6 mt-6 md:pb-12">
           {blogs.map((blog) => (
             <div key={blog._id} className="border rounded-lg shadow-md overflow-hidden">
               <Image
