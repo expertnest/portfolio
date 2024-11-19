@@ -8,6 +8,7 @@ export type Post = {
       current: string; // Slug value
     };
     author: {
+      name: string;
       _type: "reference"; // Sanity reference type
       _ref: string; // Reference to an author document ID
     };

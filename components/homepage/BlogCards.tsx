@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { fetchBlogCards } from '../../sanity/sanity-utils';
 import { TITLE_TAILWIND_CLASS } from '@/utils/constants';
+import Link from 'next/link';  // Import the Link component
 
 type BlogCard = {
   _id: string;
@@ -81,32 +82,36 @@ const BlogCards = () => {
                 className="w-full min-w-full p-6 flex-shrink-0"
               >
                 <div className="border rounded-lg shadow-md overflow-hidden">
-                  <Image
-                    src={blog.mainImage}
-                    alt={blog.altText || 'Blog Image'}
-                    width={400}
-                    height={250}
-                    className="w-full h-48 object-cover"
-                  />
-                  <div className="p-4">
-                    <h2 className="text-lg font-bold">{blog.title}</h2>
-                    <p className="text-sm text-gray-600">
-                      By {blog.authorName || 'Unknown'}
-                    </p>
-                    <p className="text-sm text-gray-500">
-                      Published: {new Date(blog.publishedAt).toLocaleDateString()}
-                    </p>
-                    <div className="flex flex-wrap gap-2 mt-2">
-                      {blog.categories.map((category) => (
-                        <span
-                          key={category.slug}
-                          className="bg-blue-100 text-blue-600 text-xs font-medium px-2 py-1 rounded"
-                        >
-                          {category.title}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
+                  <Link legacyBehavior href={`/blog/${blog.slug}`}>
+                    <a>
+                      <Image
+                        src={blog.mainImage}
+                        alt={blog.altText || 'Blog Image'}
+                        width={400}
+                        height={250}
+                        className="w-full h-48 object-cover"
+                      />
+                      <div className="p-4">
+                        <h2 className="text-lg font-bold">{blog.title}</h2>
+                        <p className="text-sm text-gray-600">
+                          By {blog.authorName || 'Unknown'}
+                        </p>
+                        <p className="text-sm text-gray-500">
+                          Published: {new Date(blog.publishedAt).toLocaleDateString()}
+                        </p>
+                        <div className="flex flex-wrap gap-2 mt-2">
+                          {blog.categories.map((category) => (
+                            <span
+                              key={category.slug}
+                              className="bg-blue-100 text-blue-600 text-xs font-medium px-2 py-1 rounded"
+                            >
+                              {category.title}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    </a>
+                  </Link>
                 </div>
               </div>
             ))}
@@ -130,32 +135,36 @@ const BlogCards = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6 mt-6 md:pb-12">
           {blogs.map((blog) => (
             <div key={blog._id} className="border rounded-lg shadow-md overflow-hidden">
-              <Image
-                src={blog.mainImage}
-                alt={blog.altText || 'Blog Image'}
-                width={400}
-                height={250}
-                className="w-full h-64 object-cover"
-              />
-              <div className="p-4">
-                <h2 className="text-lg font-bold">{blog.title}</h2>
-                <p className="text-sm text-gray-600">
-                  By {blog.authorName || 'Unknown'}
-                </p>
-                <p className="text-sm text-gray-500">
-                  Published: {new Date(blog.publishedAt).toLocaleDateString()}
-                </p>
-                <div className="flex flex-wrap gap-2 mt-2">
-                  {blog.categories.map((category) => (
-                    <span
-                      key={category.slug}
-                      className="bg-blue-100 text-blue-600 text-xs font-medium px-2 py-1 rounded"
-                    >
-                      {category.title}
-                    </span>
-                  ))}
-                </div>
-              </div>
+              <Link legacyBehavior href={`/blog/${blog.slug}`}>
+                <a href={`/blog/${blog.slug}`}>
+                  <Image
+                    src={blog.mainImage}
+                    alt={blog.altText || 'Blog Image'}
+                    width={400}
+                    height={250}
+                    className="w-full h-64 object-cover"
+                  />
+                  <div className="p-4">
+                    <h2 className="text-lg font-bold">{blog.title}</h2>
+                    <p className="text-sm text-gray-600">
+                      By {blog.authorName || 'Unknown'}
+                    </p>
+                    <p className="text-sm text-gray-500">
+                      Published: {new Date(blog.publishedAt).toLocaleDateString()}
+                    </p>
+                    <div className="flex flex-wrap gap-2 mt-2">
+                      {blog.categories.map((category) => (
+                        <span
+                          key={category.slug}
+                          className="bg-blue-100 text-blue-600 text-xs font-medium px-2 py-1 rounded"
+                        >
+                          {category.title}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </a>
+              </Link>
             </div>
           ))}
         </div>

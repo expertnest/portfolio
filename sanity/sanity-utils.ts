@@ -48,50 +48,20 @@ export async function fetchBlogCards(): Promise<
 
 
 // Fetch a single blog post by slug
-export async function fetchSingleBlogPost(slug: string): Promise<{
-  _id: string;
-  title: string;
-  slug: string;
-  mainImage: { url: string; alt: string | null };
-  author: { name: string; image?: string };
-  publishedAt: string;
-  categories: { title: string; slug: string }[];
-  body: any[]; // Define your block content type for better type safety
-} | null> {
-  const blog = await client.fetch(
-    groq`
-      *[_type == "post" && slug.current == $slug][0]{
-        _id,
-        title,
-        "slug": slug.current,
-        "mainImage": {
-          "url": mainImage.asset->url,
-          alt
-        },
-        "author": {
-          name: author->name,
-          "image": author->image.asset->url
-        },
-        publishedAt,
-        categories[]->{
-          title,
-          "slug": slug.current
-        },
-        body[]{
-          ...,
-          markDefs[]{
-            ...,
-            _type == "link" => {
-              "href": @.href,
-              "text": children[0].text
-            }
-          }
-        }
-      }`,
+export async function fetchPostBySlug(slug: string): Promise<Post | null> {
+  return client.fetch(
+    groq`*[_type == "post" && slug.current == $slug][0] {
+      _id,
+      title,
+      "slug": slug.current,
+      "authorName": author->name,
+      "categories": categories[]->title,
+      "mainImage": mainImage.asset->url,
+      body,
+      publishedAt
+    }`,
     { slug }
   );
-
-  return blog || null;
 }
 
 // Fetch all categories (optional utility function)
