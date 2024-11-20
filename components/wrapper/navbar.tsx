@@ -7,20 +7,13 @@ import { Button } from "../ui/button";
 import { SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "../ui/sheet";
  
 import {ModeToggle} from "@/components/ModeToggle";
-import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from "@/components/ui/navigation-menu";
+import { NavigationMenu,   NavigationMenuItem, NavigationMenuLink, NavigationMenuList,   } from "@/components/ui/navigation-menu";
  
 import { cn } from "@/lib/utils";
  
 import { Dialog, DialogClose } from "@radix-ui/react-dialog";
 
-const components = [
-    {
-        title: "Marketing Pages",
-        href: "/marketing-page",
-        description: "Write some wavy here to get them to click.",
-    },
-    // Add more components as necessary
-];
+ 
 
 export default function NavBar() {
    
