@@ -99,7 +99,7 @@ const BlogPostPage = ({ params }: Props) => {
             </div>
           </div>
           <div className="w-full max-w-5xl mb-6">
-            <Link href="/blog">
+            <Link href="/">
               <RainbowButton className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 border border-gray-300 rounded-lg shadow-sm hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                <div   style={{ color: 'hsl(120, 1%, 37%)' }} >← Back to Blog List
                 </div> 
