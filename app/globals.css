@@ -86,3 +86,11 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+:root {
+  --text-color: hsl(120, 1%, 37%); /* Default light mode color */
+}
+
+[data-theme="dark"] {
+  --text-color: white; /* Dark mode color */
+}
