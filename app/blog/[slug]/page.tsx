@@ -56,7 +56,7 @@ const BlogPostPage = ({ params }: Props) => {
   return (
     <PageWrapper>
       <div className="relative min-h-screen">
-        <div className="flex flex-col items-center p-4 sm:p-8">
+        <div className="flex flex-col items-center p-2">
           <div className="w-full max-w-5xl overflow-hidden">
             {/* Featured Image */}
             <div className="relative w-full h-[400px] sm:h-[500px]">
@@ -87,9 +87,12 @@ const BlogPostPage = ({ params }: Props) => {
                 }}
               >
                 By{" "}
-                <span className="font-semibold">
+             {/*
+             
+             <span className="font-semibold">
                   {blogPost.author?.name || "Unknown"}
                 </span>{" "}
+             */}   
                 |{" "}
                 {blogPost.publishedAt
                   ? new Date(blogPost.publishedAt).toLocaleDateString(undefined, {
