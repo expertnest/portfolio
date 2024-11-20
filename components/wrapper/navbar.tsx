@@ -45,11 +45,7 @@ export default function NavBar() {
                                 </Link>
                             </DialogClose>
                             <DialogClose asChild>
-                                <Link href="/dashboard" legacyBehavior passHref className="cursor-pointer">
-                                    <Button variant="outline">
-                                        Dashboard
-                                    </Button>
-                                </Link>
+                                
                             </DialogClose>
                         </div>
                     </SheetContent>
@@ -64,38 +60,15 @@ export default function NavBar() {
                     </Link>
                 </NavigationMenuList>
                 <NavigationMenuList>
-                    <NavigationMenuItem className="max-[825px]:hidden ml-5">
-                        <NavigationMenuTrigger className="dark:bg-black dark:bg-opacity-50">
-                         Projects
-                        </NavigationMenuTrigger>
-                        <NavigationMenuContent>
-                            <ul className="flex flex-col w-[400px] gap-3 p-4 lg:w-[500px]">
-                                {components.map((component) => (
-                                    <ListItem
-                                        key={component.title}
-                                        title={component.title}
-                                        href={component.href}
-                                    >
-                                        {component.description}
-                                    </ListItem>
-                                ))}
-                            </ul>
-                        </NavigationMenuContent>
-                    </NavigationMenuItem>
+                 
                     <NavigationMenuItem className="max-[825px]:hidden">
-                        <Link href="/dashboard" legacyBehavior passHref>
+                        <Link href="/" legacyBehavior passHref>
                             <Button variant="ghost">
-                                Resume
+                               Home
                             </Button>
                         </Link>
                     </NavigationMenuItem>
-                    <NavigationMenuItem className="max-[825px]:hidden">
-                        <Link href="/sign-in" legacyBehavior passHref>
-                            <Button variant="ghost">
-                               Sign In
-                            </Button>
-                        </Link> 
-                    </NavigationMenuItem>
+                
                 </NavigationMenuList>
             </NavigationMenu>
             <div className="flex items-center gap-2 max-[825px]:hidden">
