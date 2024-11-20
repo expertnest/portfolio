@@ -1,3 +1,4 @@
+import styled from 'styled-components';
 export const ParagraphTextStyles = styled.p`
   font-family: 'Nunito_Sans', sans-serif;
   margin-top: 1.5rem;
