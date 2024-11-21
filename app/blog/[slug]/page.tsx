@@ -12,6 +12,8 @@ import { RainbowButton } from "@/components/ui/rainbow-button";
 
  
 
+ 
+
 type Props = {
   params: {
     slug: string;
@@ -25,9 +27,9 @@ const BlogPostPage = ({ params }: Props) => {
   const { slug } = params;
   const [blogPost, setBlogPost] = useState<Post | null>(null);
   const [loading, setLoading] = useState(true);
-  const { theme } = useTheme(); // Access the current theme
+  const { resolvedTheme } = useTheme()
 
-  console.log(theme)
+  console.log('theme:', resolvedTheme)
 
 
   
@@ -79,7 +81,7 @@ const BlogPostPage = ({ params }: Props) => {
               <h1
                 className="text-3xl sm:text-4xl font-bold leading-tight mb-4 text-center"
                 style={{
-                  color: theme === "dark" ? "white" : "black", // Change color based on theme
+                  color: resolvedTheme === "dark" ? "white" : "black", // Change color based on theme
                 }}
               >
                 {blogPost.title}
@@ -88,7 +90,7 @@ const BlogPostPage = ({ params }: Props) => {
               <p
                 className="text-sm mb-6 text-center"
                 style={{
-                  color: theme === "dark" ? "white" : "black", // Change color based on theme
+                  color: resolvedTheme === "dark" ? "white" : "black", // Change color based on theme
                 }}
               >
              
@@ -109,7 +111,7 @@ const BlogPostPage = ({ params }: Props) => {
               </p>
               {/* Content */}
               <div className="prose max-w-none text-gray-700">
-                <MyPortableText value={blogPost.body} />
+              <MyPortableText value={blogPost.body} theme={resolvedTheme} />
               </div>
             </div>
           </div>
@@ -118,7 +120,7 @@ const BlogPostPage = ({ params }: Props) => {
               <RainbowButton className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 border border-gray-300 rounded-lg shadow-sm hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                 <p
                   style={{
-                    color: theme === "dark" ? "dark" : "white", // Change color based on theme
+                    color: resolvedTheme === "dark" ? "dark" : "white", // Change color based on theme
                   }}
                 >
                   ← Return Home

@@ -1,8 +1,6 @@
 'use client';
 
-import { useTheme } from 'next-themes';
 import { PortableText } from '@portabletext/react';
-import React from 'react';
 import styled from 'styled-components';
 
 export const ParagraphTextStyles = styled.p`
@@ -25,20 +23,7 @@ export const TitleStyles = styled.h1`
   color: ${(props) => (props.theme === 'dark' ? 'white' : 'black')};
 `;
 
-const myPortableTextComponents = {
-  block: {
-    normal: ({ children, theme }) => (
-      <ParagraphTextStyles theme={theme}>{children}</ParagraphTextStyles>
-    ),
-    h1: ({ children, theme }) => (
-      <TitleStyles theme={theme}>{children}</TitleStyles>
-    ),
-  },
-};
-
-function MyPortableText({ value }) {
-  const { theme } = useTheme();
-
+const MyPortableText = ({ value, theme }) => {
   return (
     <PortableText
       value={value}
@@ -54,6 +39,6 @@ function MyPortableText({ value }) {
       }}
     />
   );
-}
+};
 
 export default MyPortableText;
