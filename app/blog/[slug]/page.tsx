@@ -22,18 +22,13 @@ import { useTheme } from "next-themes";
 import React from "react";
 
 const BlogPostPage = ({ params }: Props) => {
-  
   const { slug } = params;
   const [blogPost, setBlogPost] = useState<Post | null>(null);
   const [loading, setLoading] = useState(true);
-  const { theme } = useTheme();
-  const [mounted, setMounted] = useState(false);
+  const { theme } = useTheme(); // Access the current theme
 
-  console.log('theme',theme)
 
-  useEffect(() => {
-    setMounted(true);
-  }, []);
+  
 
   useEffect(() => {
     async function fetchBlogPost() {
@@ -46,11 +41,6 @@ const BlogPostPage = ({ params }: Props) => {
       fetchBlogPost();
     }
   }, [slug]);
-
-  if (!mounted) return null; // Ensure theme is initialized before rendering
-
-
- 
 
   if (loading)
     return (
