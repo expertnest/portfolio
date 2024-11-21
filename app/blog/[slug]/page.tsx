@@ -22,14 +22,14 @@ import { useTheme } from "next-themes";
 import React from "react";
 
 const BlogPostPage = ({ params }: Props) => {
- 
-
-
+  
   const { slug } = params;
   const [blogPost, setBlogPost] = useState<Post | null>(null);
   const [loading, setLoading] = useState(true);
   const { theme } = useTheme();
   const [mounted, setMounted] = useState(false);
+
+  console.log('theme',theme)
 
   useEffect(() => {
     setMounted(true);

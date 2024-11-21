@@ -8,6 +8,8 @@ import { AppleCardsCarouselDemo } from "@/components/ui/AppleCardsCarouselDemo";
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
 import { HyperTextDemo } from '@/components/ui/HyperTextDemo'
 import BlogCards from "@/components/homepage/BlogCards";
+import { useTheme } from "next-themes"
+
 {/* import BlogPostPage from "@/components/homepage/BlogPost";
 import { BackgroundBeamsDemo } from "@/components/ui/BackgroundBeamsDemo";
 import { ParticlesDemo } from "@/components/ui/ParticlesDemo"; */}
@@ -15,6 +17,8 @@ import { ParticlesDemo } from "@/components/ui/ParticlesDemo"; */}
 
 
 export default function Home() {
+
+ 
   return (
     <div className="relative min-h-screen">
       <PageWrapper>
