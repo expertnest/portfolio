@@ -17,12 +17,7 @@ const About =()=> {
         Welcome to Web Dev Journey
         </h2>
         <p className="max-w-[500px] text-gray-600 dark:text-gray-400 mt-2">
-        The technologies that fuel my creations!v  The technologies that fuel my creations!
-        The technologies that fuel my creations!v  The technologies that fuel my creations!
-        The technologies that fuel my creations!v  The technologies that fuel my creations!
-        The technologies that fuel my creations!v  The technologies that fuel my creations!
-        The technologies that fuel my creations!v  The technologies that fuel my creations!
-        The technologies that fuel my creations!v  The technologies that fuel my creations!
+        I am a web developer with a Master’s in Information Technology from Kennesaw State University, specializing in creating modern, high-performance websites and applications. With expertise in tools like Next.js, React, and Tailwind CSS, I focus on delivering seamless user experiences, optimizing site performance, and implementing efficient content management solutions. My work emphasizes accessibility, responsiveness, and leveraging the latest technologies to meet unique client needs.
         </p>
       </div>
       </div>

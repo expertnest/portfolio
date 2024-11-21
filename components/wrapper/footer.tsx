@@ -5,6 +5,7 @@ import { sendEmail } from "@/actions/sendEmail";
 import toast from "react-hot-toast";
 import { Textarea } from "@/components/ui/textarea"
 import React, { useRef } from "react";
+import DownloadResumeButton from '../ui/DownloadResumeButton';
 
 export default function Footer() {
     const formRef = useRef<HTMLFormElement>(null);
@@ -68,28 +69,20 @@ export default function Footer() {
 
                         <div className="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-2">
 
+                            
+
                             <div>
-                                <p className="font-medium ">Socials</p>
+                                <p className="font-medium ">Other Links</p>
 
                                 <ul className="mt-6 space-y-4 text-sm">
                                     <li>
-                                        <a href="https://twitter.com/rasmickyy" target="_blank" className="transition hover:opacity-75"> Twitter </a>
+                                        <a target="_blank" href=" https://github.com/mac9192" rel="noopener noreferrer" className="  transition hover:opacity-75"> Github </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.youtube.com/@rasmic" target="_blank" className="  transition hover:opacity-75"> YouTube </a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div>
-                                <p className="font-medium ">Helpful Links</p>
-
-                                <ul className="mt-6 space-y-4 text-sm">
-                                    <li>
-                                        <a target="_blank" href="/" rel="noopener noreferrer" className="  transition hover:opacity-75"> Docs </a>
+                                        <a href="https://www.linkedin.com/in/miguel-colmenares-a32537119/" className="  transition hover:opacity-75"> Linkedin </a>
                                     </li>
                                     <li>
-                                        <a href="/" className="  transition hover:opacity-75"> Methodology </a>
+                                    <DownloadResumeButton />
                                     </li>
                                 </ul>
                             </div>
@@ -98,15 +91,12 @@ export default function Footer() {
                         <div className="mt-8 border-t   pt-8">
                             <ul className="flex flex-wrap gap-4 text-xs">
                                 <li>
-                                    <a href="/" target="_blank" className="transition hover:opacity-75">Terms & Conditions </a>
+                                  <p>  </p>
                                 </li>
 
-                                <li>
-                                    <a href="/" target="_blank" className="transition hover:opacity-75">Privacy Policy </a>
-                                </li>
+                              
                             </ul>
-
-                            <p className="mt-8 text-xs  ">&copy; 2024. SomeCompany LLC. All rights reserved.</p>
+ 
                         </div>
                     </div>
                 </div>

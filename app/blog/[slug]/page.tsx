@@ -86,14 +86,14 @@ const BlogPostPage = ({ params }: Props) => {
                   color: theme === "dark" ? "white" : "black", // Change color based on theme
                 }}
               >
-                By{" "}
+             
              {/*
              
              <span className="font-semibold">
                   {blogPost.author?.name || "Unknown"}
                 </span>{" "}
              */}   
-                |{" "}
+           
                 {blogPost.publishedAt
                   ? new Date(blogPost.publishedAt).toLocaleDateString(undefined, {
                       year: "numeric",
