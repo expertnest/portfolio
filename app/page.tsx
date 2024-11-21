@@ -8,7 +8,7 @@ import { AppleCardsCarouselDemo } from "@/components/ui/AppleCardsCarouselDemo";
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
 import { HyperTextDemo } from '@/components/ui/HyperTextDemo'
 import BlogCards from "@/components/homepage/BlogCards";
-import { useTheme } from "next-themes"
+ 
 
 {/* import BlogPostPage from "@/components/homepage/BlogPost";
 import { BackgroundBeamsDemo } from "@/components/ui/BackgroundBeamsDemo";
