@@ -19,7 +19,7 @@ const About =()=> {
         <Image className='rounded-xl'src='/profile1.webp' width={325} height={100} alt="Profile" />
         <div className="relative z-20 flex flex-col sm:items-center md:items-start justify-center w-full lg:w-[75%] md:text-left sm:text-center">
         <h2 className={`${TITLE_TAILWIND_CLASS} mt-2 font-semibold tracking-tight dark:text-white text-gray-900 sm:mt-8 sm:pb-4 md:pb-0 md:mt-0`}>
-        Welcome to Web Dev Journey
+        Welcome to my Web Dev Journey
         </h2>
         <p className="max-w-[500px] text-gray-600 dark:text-gray-400 mt-2">
         I am a web developer with a Master’s in Information Technology from Kennesaw State University, specializing in creating modern, high-performance websites and applications. With expertise in tools like Next.js, React, and Tailwind CSS, I focus on delivering seamless user experiences, optimizing site performance, and implementing efficient content management solutions. My work emphasizes accessibility, responsiveness, and leveraging the latest technologies to meet unique client needs.
