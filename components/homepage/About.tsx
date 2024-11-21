@@ -1,7 +1,12 @@
 import Image from 'next/image'
 import { TITLE_TAILWIND_CLASS } from '@/utils/constants'
+ 
+
+
+
 const About =()=> {
 
+ 
 
     return (
 

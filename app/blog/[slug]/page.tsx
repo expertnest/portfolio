@@ -27,6 +27,8 @@ const BlogPostPage = ({ params }: Props) => {
   const [loading, setLoading] = useState(true);
   const { theme } = useTheme(); // Access the current theme
 
+  console.log(theme)
+
 
   
 
