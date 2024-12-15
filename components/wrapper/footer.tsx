@@ -22,7 +22,7 @@ export default function Footer() {
                         <div className="mt-8 space-y-4 lg:mt-0">
 
                             <div>
-                                <h3 className="text-2xl font-medium">Reach out for any questions!</h3>
+                                <h3 className="text-2xl font-medium">Reach out for any questions!!</h3>
                                 <p className="mt-4 max-w-lg  ">
                                    
                                 </p>
