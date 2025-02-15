@@ -104,7 +104,7 @@ const SpringAnimatedFeatures = () => {
         <h2 className={`${TITLE_TAILWIND_CLASS} mt-2 font-semibold tracking-tight dark:text-white text-gray-900`}>
         Behind the Code
         </h2>
-        <p className="max-w-[500px] text-gray-600 dark:text-gray-400 mt-2">
+        <p className="max-w-[500px] text-gray-600 dark:text-gray-400 mt-2 md:text-2xl">
         The technologies that fuel my creations!
         </p>
 

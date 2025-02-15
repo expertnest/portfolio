@@ -45,7 +45,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         <h2 className={`${TITLE_TAILWIND_CLASS} mt-2 font-semibold tracking-tight dark:text-white text-gray-900`}>
          Professional Timeline
         </h2>
-        <p className="max-w-[500px] sm:pt-3 md:pt-0 text-gray-600 dark:text-gray-400 mt-2 text-center container mx-auto">
+        <p className="max-w-[500px] sm:pt-3 md:pt-0 text-gray-600 dark:text-gray-400 mt-2 text-center container mx-auto md:text-2xl" >
         Experience in Web Development and Digital Solutions
         </p>
       </div>

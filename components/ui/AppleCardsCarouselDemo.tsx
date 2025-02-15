@@ -56,7 +56,7 @@ export function AppleCardsCarouselDemo() {
            <h2 className={`${TITLE_TAILWIND_CLASS} mt-2 font-semibold tracking-tight dark:text-white text-gray-900`}>
      Latest Projects
         </h2>
-        <p className="max-w-[500px] text-gray-600 dark:text-gray-400 mt-2 mx-auto  text-center ">
+        <p className="max-w-[500px] text-gray-600 dark:text-gray-400 mt-2 mx-auto md:text-2xl text-center ">
        Check out my latest works
         </p>
       <Carousel items={cards} />

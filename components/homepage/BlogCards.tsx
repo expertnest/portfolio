@@ -65,7 +65,7 @@ const BlogCards = () => {
       >
        Latest Blog Posts
       </h2>
-      <p className="max-w-[500px] text-gray-600 dark:text-gray-400 mt-2 mx-auto text-center md:pb-5">
+      <p className="max-w-[500px] text-gray-600 dark:text-gray-400 mt-2 mx-auto text-center md:pb-5 md:text-2xl">
        Read my thoughts on web topics!
       </p>
 
