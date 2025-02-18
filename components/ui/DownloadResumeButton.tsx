@@ -6,10 +6,10 @@
 export default function DownloadResumeButton() {
   const handleDownload = () => {
     // This navigates to the file in the public folder
-    const resumeUrl = "/resume.pdf";
+    const resumeUrl = "/Resume_Miguel_Colmenares.pdf";
     const link = document.createElement("a");
     link.href = resumeUrl;
-    link.download = "My_Resume.pdf"; // Set the file name for the download
+    link.download = "Resume_Miguel_Colmenares.pdf"; // Set the file name for the download
     link.click();
   };
 
