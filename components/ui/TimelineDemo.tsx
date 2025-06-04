@@ -5,7 +5,7 @@ export function TimelineDemo() {
   const data = [
     {
       title: "2024 - Present",
-      job: "Web Designer & Developer, VisionTech Studio",
+      job: "Web Designer & Full Stack Developer, VisionTech Studio",
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-lg md:text-lg font-normal mb-4">
@@ -58,7 +58,7 @@ export function TimelineDemo() {
     },
     {
       title: "2021 - 2022",
-      job: "Blockchain Developer, Cosmos Blockchain (Freelance)",
+      job: "Blockchain Developer, Cosmos Blockchain ",
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-lg font-normal mb-4">
