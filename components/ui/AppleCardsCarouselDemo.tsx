@@ -150,9 +150,31 @@ const DummyContent: React.FC<DummyContentProps> = ({  pic1, pic2, pic3, category
 const data: CardData[] = [
   {
     category: "Web Development",
+    title: "VisionTech Studio",
+    src: "/vt1.png",
+    link: "https://www.sampledemo.website/en",
+    content: <DummyContent 
+      category="Artificial Intelligence" 
+      title="You can do more with AI." 
+      src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?q=80&w=3556&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+      pic1="/vt1.png" 
+      pic2="/vt2.png" 
+      pic3="/vt3.png" 
+      categoryOne="Next.js" 
+      categoryTwo="Tailwind CSS" 
+      categoryThree="Framer Motion" 
+      descriptionOne="used to build a high-performance site from scratch, giving VisionTech a fast, seamless experience with clean routing and optimized load times." 
+      descriptionTwo="ensured the design remained clean and adaptable across all devices, supporting future localization and scalable content updates." 
+      descriptionThree="brought the site to life with subtle interactions and smooth animations, enhancing engagement and reinforcing the studio’s modern tech identity." 
+      url="https://www.visiontechstudio.com" 
+    />
+  },
+  
+  {
+    category: "Web Development",
     title: "Soch Performance",
     src: "/soch-1.png",
-    link:"https://www.sampledemo.website/en",
+    link:"https://sochperformance.com",
     content: <DummyContent category="Artificial Intelligence" title="You can do more with AI." src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?q=80&w=3556&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" pic1="/soch-1.png" pic2="/soch-2.png" pic3="/soch-3.png" 
     categoryOne="Next.js" categoryTwo="Internationalization " categoryThree="Tailwind CSS and Framer Motion" descriptionOne="provided a robust foundation for performance and scalability, enabling fast load times and efficient rendering across devices, which was essential for Soch Performance’s competitive positioning." descriptionTwo="allowed the site to cater to a diverse audience by supporting multiple languages, making Soch Performance accessible to global users and enhancing its market reach." descriptionThree=" facilitated rapid and responsive design, streamlining the development process and ensuring a visually cohesive layout that aligns with Soch’s high-end brand image." url="https://www.sampledemo.website/en"/>,
 
