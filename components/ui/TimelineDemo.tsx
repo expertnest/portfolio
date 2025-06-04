@@ -8,24 +8,24 @@ export function TimelineDemo() {
       job: "Web Designer & Developer, VisionTech Studio",
       content: (
         <div>
+          <p className="text-neutral-800 dark:text-neutral-200 text-lg md:text-lg font-normal mb-4">
+            Atlanta, Georgia. February, 2024 − Present
+          </p>
           <ul className="list-disc list-inside space-y-4 text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal">
-            <p className="text-neutral-800 dark:text-neutral-200 text-lg md:text-lg font-normal mb-4">
-              February 2024 - Present
-            </p>
             <li className="text-md md:text-lg">
-              Lead end-to-end web projects, from UI/UX design in Figma to development with Next.js, React, and Tailwind CSS.
+              Spearheaded full-cycle website builds from Figma UI/UX design to deploying high-performance, responsive sites with Next.js and Tailwind CSS.
             </li>
             <li className="text-md md:text-lg">
-              Collaborate closely with clients, defining project scope, ensuring alignment, and maintaining clear communication.
+              Collaborated directly with clients to define project scope, align deliverables with business goals, and maintain consistent communication throughout.
             </li>
             <li className="text-md md:text-lg">
-              Build high-performance websites, integrating Framer Motion animations, SEO, and analytics for enhanced user experience.
+              Integrated Framer Motion, SEO best practices, and analytics to boost engagement and performance.
             </li>
             <li className="text-md md:text-lg">
-              Implement CMS solutions (Sanity, Supabase) to simplify content management and improve scalability.
+              Deployed CMS platforms like Sanity and Directus with Supabase and Convex for scalable content management and backend architecture.
             </li>
             <li className="text-md md:text-lg">
-              Ensure web accessibility, performance, and privacy standards compliance throughout all projects.
+              Ensured compliance with modern web accessibility, performance, and privacy standards.
             </li>
           </ul>
         </div>
@@ -33,54 +33,49 @@ export function TimelineDemo() {
     },
     {
       title: "2023 - 2024",
-      job: "Cheves Briceno Law Firm",
+      job: "Web Developer, Cheves Briceno Law Firm",
       content: (
-        <ul className="list-disc list-inside space-y-4 text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal">
+        <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-lg font-normal mb-4">
             Atlanta, Georgia. February, 2023 − January, 2024
           </p>
-          <li className="text-md md:text-lg">
-            Led website migration from WordPress to Next.js and integrated Directus Headless CMS. Achieved a 39 percent increase
-            in Google PageSpeed Insights’ Performance metric, enhancing user experience.
-          </li>
-          <li className="text-md md:text-lg">
-            Utilized a modern frontend tech stack, including TypeScript, Tailwind CSS, and Next.js, to build responsive and performant
-            web applications.
-          </li>
-          <li className="text-md md:text-lg">
-            Integrated application with the ChatGPT API, training it to only provide context-specific responses from the law firm.
-          </li>
-          <li className="text-md md:text-lg">
-            Implemented file-based routing, server and client components, data fetching, server-side rendering (SSR), SEO best practices,
-            internationalization (i18n) to enhance user experiences, and created contact forms that directly route submissions to email.
-          </li>
-        </ul>
+          <ul className="list-disc list-inside space-y-4 text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal">
+            <li className="text-md md:text-lg">
+              Led migration from WordPress to a modern Next.js architecture, integrating Directus as a headless CMS. Improved Google PageSpeed Performance by 39%, significantly enhancing load times and user experience.
+            </li>
+            <li className="text-md md:text-lg">
+              Developed responsive, high-performance web applications using a modern frontend stack: TypeScript, Tailwind CSS, and Next.js.
+            </li>
+            <li className="text-md md:text-lg">
+              Integrated the ChatGPT API with custom fine-tuning to deliver responses strictly contextualized to the law firm’s internal knowledge base.
+            </li>
+            <li className="text-md md:text-lg">
+              Engineered key site features including file-based routing, hybrid rendering with server and client components, optimized data fetching, SSR, SEO optimization, internationalization (i18n), and dynamic contact forms routing directly to email.
+            </li>
+          </ul>
+        </div>
       ),
     },
     {
       title: "2021 - 2022",
-      job: "Cosmos Blockchain",
+      job: "Blockchain Developer, Cosmos Blockchain (Freelance)",
       content: (
-        <ul className="list-disc list-inside space-y-4 text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal">
+        <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-lg font-normal mb-4">
-            Atlanta, Georgia. November, 2021 - December, 2022
+            Atlanta, Georgia. November, 2021 − December, 2022
           </p>
-          <li className="text-md md:text-lg">
-          Managed and maintained Linux-based cloud infrastructure on AWS and Linode, provisioning and configuring EC2 instances, setting up IAM roles and policies, managing SSH key access, and ensuring secure, scalable user authentication and permissions.
-</li>
-<li className="text-md md:text-lg">
-Implemented firewall rules and security groups, and monitored Cosmos proof-of-stake nodes and validators for performance and updates.,
-</li>
-
-
-          
-          <li className="text-md md:text-lg">
-            Configured cloud servers on Linode using the Tendermint protocol in order to launch an active set of Stargaze and Osmosis Blockchain proof of stake  Validator nodes.
-           
-          </li>
-
-
-        </ul>
+          <ul className="list-disc list-inside space-y-4 text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal">
+            <li className="text-md md:text-lg">
+              Managed and maintained Linux-based cloud infrastructure on AWS and Linode, provisioning EC2 instances, configuring IAM roles and policies, managing SSH key access, and securing scalable user authentication and permissions.
+            </li>
+            <li className="text-md md:text-lg">
+              Implemented firewall rules and security groups, and monitored Cosmos proof-of-stake nodes and validators for performance and software updates.
+            </li>
+            <li className="text-md md:text-lg">
+              Configured cloud servers on Linode using the Tendermint protocol to launch active Stargaze and Osmosis blockchain validator nodes.
+            </li>
+          </ul>
+        </div>
       ),
     },
     {
@@ -91,11 +86,11 @@ Implemented firewall rules and security groups, and monitored Cosmos proof-of-st
           <p className="text-neutral-800 dark:text-neutral-200 text-lg font-normal mb-4">
             Atlanta, Georgia. Kennesaw State University. GPA: 4.0
           </p>
-          <div className="grid grid-cols-2 gap-4"></div>
         </div>
       ),
     },
   ];
+
   return (
     <div className="w-full">
       <Timeline data={data} />
