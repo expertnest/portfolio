@@ -66,13 +66,17 @@ export function TimelineDemo() {
             Atlanta, Georgia. November, 2021 - December, 2022
           </p>
           <li className="text-md md:text-lg">
-  Administered and optimized cloud server environments on both AWS and Linode using Linux Ubuntu; configured and maintained EC2 instances, IAM roles, and user permissions; implemented network security through security groups and firewalls; and monitored performance and updates for Cosmos Blockchain proof-of-stake nodes and validators.
+          Managed and maintained Linux-based cloud infrastructure on AWS and Linode, provisioning and configuring EC2 instances, setting up IAM roles and policies, managing SSH key access, and ensuring secure, scalable user authentication and permissions.
 </li>
+<li className="text-md md:text-lg">
+Implemented firewall rules and security groups, and monitored Cosmos proof-of-stake nodes and validators for performance and updates.,
+</li>
+
 
           
           <li className="text-md md:text-lg">
-            Configured cloud servers on Linode using the Tendermint protocol in order to launch an active set of Stargaze and Osmosis Blockchain proof of stake nodes.
-            Validator nodes.
+            Configured cloud servers on Linode using the Tendermint protocol in order to launch an active set of Stargaze and Osmosis Blockchain proof of stake  Validator nodes.
+           
           </li>
 
 
@@ -85,7 +89,7 @@ export function TimelineDemo() {
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-lg font-normal mb-4">
-            Atlanta, Georgia. Kennesaw State University.
+            Atlanta, Georgia. Kennesaw State University. GPA: 4.0
           </p>
           <div className="grid grid-cols-2 gap-4"></div>
         </div>
