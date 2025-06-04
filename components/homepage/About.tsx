@@ -22,7 +22,7 @@ const About =()=> {
         Welcome to my Web Dev Journey
         </h2>
         <p className="max-w-[650px] text-gray-600 dark:text-gray-400 mt-2 w-full md:text-xl">
-        I’m a web developer with an M.S. in IT from Kennesaw State, specializing in high-performance websites and apps. Skilled in Next.js, React, and Tailwind CSS, I focus on seamless UX, speed, accessibility, and modern content management solutions.        </p>
+        I build fast, accessible websites and apps with a focus on user experience. Skilled in Next.js, React, and Tailwind CSS, I also manage cloud infrastructure on AWS and Linode, using Linux to deploy and secure scalable systems. My work blends modern frontend development with solid backend and server expertise.  </p>
       </div>
       </div>
       

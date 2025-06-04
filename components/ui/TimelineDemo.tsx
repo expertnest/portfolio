@@ -22,7 +22,7 @@ export function TimelineDemo() {
               Build high-performance websites, integrating Framer Motion animations, SEO, and analytics for enhanced user experience.
             </li>
             <li className="text-md md:text-lg">
-              Implement CMS solutions (Sanity, WordPress) to simplify content management and improve scalability.
+              Implement CMS solutions (Sanity, Supabase) to simplify content management and improve scalability.
             </li>
             <li className="text-md md:text-lg">
               Ensure web accessibility, performance, and privacy standards compliance throughout all projects.
@@ -66,18 +66,16 @@ export function TimelineDemo() {
             Atlanta, Georgia. November, 2021 - December, 2022
           </p>
           <li className="text-md md:text-lg">
-            Utilized scripting tools to randomly generate thousands of images for NFT art collections, uploaded images to IPFS, and
-            deployed collections based on sg721 contracts to the Cosmos Stargaze Marketplace.
-          </li>
+  Administered and optimized cloud server environments on both AWS and Linode using Linux Ubuntu; configured and maintained EC2 instances, IAM roles, and user permissions; implemented network security through security groups and firewalls; and monitored performance and updates for Cosmos Blockchain proof-of-stake nodes and validators.
+</li>
+
+          
           <li className="text-md md:text-lg">
-            Configured cloud servers on Linode using the Tendermint protocol in order to launch an active set of Stargaze and Osmosis
+            Configured cloud servers on Linode using the Tendermint protocol in order to launch an active set of Stargaze and Osmosis Blockchain proof of stake nodes.
             Validator nodes.
           </li>
-          <li className="text-md md:text-lg">
-            Managed multiple cloud server systems on Linode with Linux Ubuntu, created and managed system permissions and
-            user accounts, oversaw network security and firewalls, monitored network performance, cloud resources, and updates for
-            Cosmos proof-of-stake nodes and validators.
-          </li>
+
+
         </ul>
       ),
     },
