@@ -152,7 +152,7 @@ const data: CardData[] = [
     category: "Web Development",
     title: "VisionTech Studio",
     src: "/vt1.png",
-    link: "https://www.sampledemo.website/en",
+    link: "https://www.visiontechstudio.com",
     content: <DummyContent 
       category="Artificial Intelligence" 
       title="You can do more with AI." 
